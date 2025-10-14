@@ -1,0 +1,194 @@
+:root{
+	--bg:#f7f9fb;
+	--card:#ffffff;
+	--accent:#2b6cb0;
+	--muted:#6b7280;
+	--text:#0f1724;
+	--radius:10px;
+	--max-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	margin:0;
+	background:var(--bg);
+	color:var(--text);
+	line-height:1.5;
+}
+
+.container{
+	max-width:var(--max-width);
+	margin:0 auto;
+	padding:1.5rem;
+}
+
+/* Header / Nav */
+.site-header{
+	background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.85));
+	backdrop-filter: blur(6px);
+	border-bottom:1px solid rgba(15,23,36,0.06);
+	position:sticky;
+	top:0;
+	z-index:50;
+}
+
+.header-inner{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap:1rem;
+}
+
+.brand{
+	font-weight:700;
+	letter-spacing:0.2px;
+	color:var(--text);
+	text-decoration:none;
+	font-size:1.05rem;
+}
+
+/* nav toggle (mobile) */
+.nav-toggle-label{
+	display:none;
+	width:36px;
+	height:36px;
+	border-radius:8px;
+	align-items:center;
+	justify-content:center;
+	cursor:pointer;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	display:block;
+	width:18px;
+	height:2px;
+	background:var(--text);
+	border-radius:2px;
+	position:relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+	content:"";
+	position:absolute;
+	left:0;
+}
+.nav-toggle-label span::before{top:-6px}
+.nav-toggle-label span::after{top:6px}
+
+#nav-toggle, #nav-toggle-2, #nav-toggle-3, #nav-toggle-4{
+	display:none;
+}
+
+.nav ul{
+	list-style:none;
+	display:flex;
+	align-items:center;
+	gap:1rem;
+	margin:0;
+	padding:0;
+}
+
+.nav a{
+	text-decoration:none;
+	color:var(--muted);
+	padding:.6rem .8rem;
+	border-radius:8px;
+	font-weight:600;
+	font-size:.95rem;
+}
+.nav a:hover{color:var(--accent); background:rgba(43,108,176,0.06)}
+.nav a.active{color:var(--accent); background:rgba(43,108,176,0.08)}
+
+/* Hero */
+.hero{
+	padding:4rem 0;
+	background:linear-gradient(180deg, rgba(43,108,176,0.06), transparent);
+}
+.hero h1{
+	margin:0 0 .5rem 0;
+	font-size:2rem;
+	letter-spacing:-0.6px;
+}
+.hero p{margin:.2rem 0 1rem 0; color:var(--muted)}
+
+/* Utilities */
+.btn{
+	display:inline-block;
+	background:var(--accent);
+	color:white;
+	padding:.6rem 1rem;
+	border-radius:8px;
+	text-decoration:none;
+	font-weight:600;
+}
+.btn.ghost{
+	background:transparent;
+	color:var(--accent);
+	border:1px solid rgba(43,108,176,0.12);
+}
+
+/* Grid & cards */
+.grid{display:grid; gap:1rem}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{
+	background:var(--card);
+	padding:1rem;
+	border-radius:var(--radius);
+	box-shadow:0 6px 18px rgba(15,23,36,0.04);
+}
+.card h3{margin-top:0}
+.bio{padding:1.25rem}
+
+/* Page content */
+.page{padding:2rem 0}
+.lead{color:var(--muted); margin-top:0.25rem}
+
+/* Contact form */
+.contact-form{max-width:700px}
+.contact-form label{display:block; margin-bottom:.75rem; font-weight:600; color:var(--muted)}
+.contact-form input,
+.contact-form textarea{
+	width:100%;
+	padding:.75rem;
+	border-radius:8px;
+	border:1px solid rgba(15,23,36,0.08);
+	background:white;
+	resize:vertical;
+	margin-top:.35rem;
+}
+.form-actions{display:flex; gap:.75rem; margin-top:.5rem}
+
+/* Footer */
+.site-footer{
+	padding:1rem 0;
+	margin-top:2rem;
+	background:transparent;
+	border-top:1px solid rgba(15,23,36,0.04);
+	color:var(--muted);
+}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+
+/* Responsive */
+@media (max-width:900px){
+	.grid-3{grid-template-columns:repeat(2,1fr)}
+	.grid-2{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+	.header-inner{padding:0}
+	.nav{position:absolute; left:0; right:0; top:64px; background:var(--bg); display:none; padding:1rem; border-bottom:1px solid rgba(15,23,36,0.04)}
+	.nav ul{flex-direction:column; gap:0.25rem}
+	.nav a{padding:.8rem 1rem}
+	.nav-toggle-label{display:flex}
+	#nav-toggle:checked + .nav-toggle-label + .nav,
+	#nav-toggle-2:checked + .nav-toggle-label + .nav,
+	#nav-toggle-3:checked + .nav-toggle-label + .nav,
+	#nav-toggle-4:checked + .nav-toggle-label + .nav{
+		display:block;
+	}
+	.container{padding:1rem}
+	.hero h1{font-size:1.5rem}
+}

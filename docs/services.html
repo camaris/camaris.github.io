@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Bewust-er zijn - Aanbod</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html">Bewust-er zijn — Aanbod</a>
+
+			<input id="nav-toggle-2" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle-2">
+				<span></span>
+			</label>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html" class="active">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="page">
+			<h1>Services</h1>
+			<p class="lead">Flexible offerings tailored to your needs.</p>
+
+			<div class="grid grid-3">
+				<div class="card">
+					<h3>Personal Coaching</h3>
+					<p>Weekly sessions focused on goal setting, habits, and accountability.</p>
+				</div>
+				<div class="card">
+					<h3>Career Transition</h3>
+					<p>Structured support for career changes, CV feedback and interviews.</p>
+				</div>
+				<div class="card">
+					<h3>Team Workshops</h3>
+					<p>Custom workshops to improve collaboration and leadership skills.</p>
+				</div>
+				<div class="card">
+					<h3>Performance Plans</h3>
+					<p>Data-driven plans to measure progress and deliverables.</p>
+				</div>
+				<div class="card">
+					<h3>Remote Coaching</h3>
+					<p>Flexible online sessions to fit busy schedules.</p>
+				</div>
+				<div class="card">
+					<h3>Follow-up & Accountability</h3>
+					<p>Check-ins and course-corrections to sustain growth.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year-srv"></span> Sofie Coach</p>
+		</div>
+	</footer>
+
+	<script>
+		document.getElementById('year-srv').textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>

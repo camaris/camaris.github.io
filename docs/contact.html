@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Bewust-er zijn — Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html">Bewust-er zijn — Contact</a>
+
+			<input id="nav-toggle-4" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle-4">
+				<span></span>
+			</label>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="page contact">
+			<h1>Contact</h1>
+			<p class="lead">I'd love to hear from you. Send a brief message and I'll respond soon.</p>
+
+			<form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+				<label>
+					Name
+					<input type="text" name="name" required>
+				</label>
+				<label>
+					Email
+					<input type="email" name="email" required>
+				</label>
+				<label>
+					Message
+					<textarea name="message" rows="6" required></textarea>
+				</label>
+				<div class="form-actions">
+					<button class="btn" type="submit">Send</button>
+					<a class="btn ghost" href="index.html">Cancel</a>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year-contact"></span> Sofie Coach</p>
+		</div>
+	</footer>
+
+	<script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
+</body>
+</html>
