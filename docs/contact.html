@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Bewust-er zijn — Contact</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!-- added cookie styles -->
+	<link rel="stylesheet" href="css/cookies.css">
 </head>
 <body>
 	<header class="site-header">
@@ -55,10 +57,72 @@
 
 	<footer class="site-footer">
 		<div class="container footer-inner">
-			<p>© <span id="year-contact"></span> camaris</p>
+			<p>© <span id="year"></span> camaris — All rights reserved.</p>
+			<p>
+				<a href="privacy.html" aria-hidden="true">Privacy Statement</a>
+				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie preferences">Privacy settings</button>
+			</p>
 		</div>
 	</footer>
 
-	<script>document.getElementById('year-contact').textContent = new Date().getFullYear();</script>
-</body>
+	<!-- Cookie banner -->
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
+		<div class="cookie-inner container">
+			<div class="cookie-text">
+				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
+			</div>
+			<div class="cookie-actions">
+				<button id="cookie-accept" class="btn">Accept all</button>
+				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cookie preferences modal -->
+	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
+		<div class="cookie-modal-content">
+			<header>
+				<h2 id="cookie-modal-title">Cookie preferences</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
+			</header>
+			<form id="cookie-form">
+				<p>Select which cookies you allow.</p>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-essential" checked disabled>
+						Essential (required)
+					</label>
+					<p class="muted">Necessary for the website to work.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-analytics">
+						Analytics
+					</label>
+					<p class="muted">Help us understand how the site is used.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-marketing">
+						Marketing
+					</label>
+					<p class="muted">Used to show relevant content.</p>
+				</div>
+
+				<div class="modal-actions">
+					<button type="button" id="pref-save" class="btn">Save preferences</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		// small script to set the current year
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+
+	<!-- cookie management script -->
+	<script src="js/cookies.js" defer></script></body>
 </html>

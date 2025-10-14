@@ -104,6 +104,17 @@
 		savePrefs(prefs);
 	});
 
+	// new: open-cookie-settings button (footer) opens the same modal
+	const openSettingsBtn = document.getElementById('open-cookie-settings');
+	if (openSettingsBtn) {
+		openSettingsBtn.addEventListener('click', function (e) {
+			e.preventDefault();
+			openModal();
+			// ensure banner is hidden when user opens explicit settings
+			hideBanner();
+		});
+	}
+
 	// Initialize on load
 	document.addEventListener('DOMContentLoaded', function () {
 		const prefs = loadPrefs();

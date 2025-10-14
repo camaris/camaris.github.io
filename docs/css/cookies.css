@@ -1,11 +1,28 @@
+/* Global Color Palette */
+:root {
+	/* Brand & Accent Colors */
+	--color-primary: #4d4033; /* Deep brown */
+	--color-accent: #e87a2e; /* Warm orange */
+
+	/* Text Colors */
+	--text-primary: #3d342a; /* Dark brown for main text */
+	--text-on-primary: #f5f5dc; /* Beige for text on dark backgrounds */
+	--text-on-accent: #ffffff; /* White for text on accent color */
+	--text-muted: #a99a8c; /* Lighter brown for secondary text */
+
+	/* Background Colors */
+	--bg-body: #fdfbf7; /* Soft off-white for main page background */
+	--bg-surface: #ffffff; /* White for cards, modals, etc. */
+}
+
 /* Basic cookie banner and modal styles */
 .cookie-banner {
 	position: fixed;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(24,24,24,0.95);
-	color: #fff;
+	background: var(--color-primary);
+	color: var(--text-on-primary);
 	padding: 1rem 0;
 	z-index: 9999;
 	transform: translateY(100%);
@@ -40,8 +57,8 @@
 	display: flex;
 }
 .cookie-modal-content {
-	background: #fff;
-	color: #111;
+	background: var(--bg-body);
+	color: var(--text-primary);
 	max-width: 600px;
 	width: calc(100% - 2rem);
 	padding: 1rem 1.25rem;
@@ -62,13 +79,13 @@
 }
 .pref-row { margin: 0.75rem 0; }
 .pref-row label { font-weight:500; }
-.pref-row .muted { margin: 0.25rem 0 0; font-size:0.85rem; color:#666; }
+.pref-row .muted { margin: 0.25rem 0 0; font-size:0.85rem; color: var(--text-muted); }
 
 /* simple utility */
-.muted { color: #777; font-size: 0.9rem; }
-.btn { background:#0078d4; color:#fff; border:none; padding:0.5rem 0.75rem; border-radius:4px; cursor:pointer; }
-.btn.ghost { background:transparent; color:inherit; border:1px solid rgba(255,255,255,0.12); }
-.cookie-modal .btn.ghost { border:1px solid #ccc; color:#333; background:transparent; }
+.muted { color: var(--text-muted); font-size: 0.9rem; }
+.btn { background:var(--color-accent); color:var(--text-on-accent); border:none; padding:0.5rem 0.75rem; border-radius:4px; cursor:pointer; }
+.btn.ghost { background:transparent; color:inherit; border:1px solid rgba(255,255,255,0.25); }
+.cookie-modal .btn.ghost { border:1px solid var(--text-muted); color:var(--text-primary); background:transparent; }
 .modal-actions { display:flex; gap:0.5rem; justify-content:flex-end; margin-top:0.5rem; }
 @media (max-width:700px) {
 	.cookie-inner { flex-direction: column; align-items:flex-start; }

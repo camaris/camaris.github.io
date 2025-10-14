@@ -3,18 +3,17 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Bewust-er zijn - Aanbod</title>
+	<title>Privacy — Bewust-er zijn</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 </head>
 <body>
 	<header class="site-header">
 		<div class="container header-inner">
-			<a class="brand" href="index.html">Bewust-er zijn — Aanbod</a>
+			<a class="brand" href="index.html">Bewust-er zijn</a>
 
-			<input id="nav-toggle-2" type="checkbox" />
-			<label class="nav-toggle-label" for="nav-toggle-2">
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
 				<span></span>
 			</label>
 
@@ -22,44 +21,63 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="services.html" class="active">Services</a></li>
+					<li><a href="services.html">Services</a></li>
 					<li><a href="contact.html">Contact</a></li>
+					<li><a href="privacy.html" class="active">Privacy</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 
 	<main class="container">
-		<section class="page">
-			<h1>Services</h1>
-			<p class="lead">Flexible offerings tailored to your needs.</p>
+		<section class="intro">
+			<h1>Privacybeleid</h1>
+			<p>Deze pagina legt uit welke gegevens we verzamelen, waarom we ze gebruiken en welke rechten u heeft. Deze praktijk is bedoeld om transparant en overzichtelijk te zijn.</p>
+		</section>
 
-			<div class="grid grid-3">
-				<div class="card">
-					<h3>Personal Coaching</h3>
-					<p>Weekly sessions focused on goal setting, habits, and accountability.</p>
-				</div>
-				<div class="card">
-					<h3>Career Transition</h3>
-					<p>Structured support for career changes, CV feedback and interviews.</p>
-				</div>
-				<div class="card">
-					<h3>Team Workshops</h3>
-					<p>Custom workshops to improve collaboration and leadership skills.</p>
-				</div>
-				<div class="card">
-					<h3>Performance Plans</h3>
-					<p>Data-driven plans to measure progress and deliverables.</p>
-				</div>
-				<div class="card">
-					<h3>Remote Coaching</h3>
-					<p>Flexible online sessions to fit busy schedules.</p>
-				</div>
-				<div class="card">
-					<h3>Follow-up & Accountability</h3>
-					<p>Check-ins and course-corrections to sustain growth.</p>
-				</div>
-			</div>
+		<section>
+			<h2>1. Welke gegevens verzamelen we?</h2>
+			<ul>
+				<li>Contactgegevens die u opstuurt via formulieren (naam, e‑mail, bericht).</li>
+				<li>Technische gegevens zoals IP‑adres en browsergegevens via serverlogs en (indien toegestaan) analytics.</li>
+				<li>Cookies en vergelijkbare technologieën — zie het cookie‑gedeelte hieronder.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>2. Hoe gebruiken we uw gegevens?</h2>
+			<p>We gebruiken uw gegevens om te reageren op contactverzoeken, om de website te verbeteren en, als u daarvoor toestemming geeft, voor analyses en gerichte communicatie.</p>
+		</section>
+
+		<section>
+			<h2>3. Cookies</h2>
+			<p>De website gebruikt essentiële cookies voor basisfunctionaliteit. Voor analytische en marketingcookies vragen we uw toestemming. U kunt uw voorkeuren instellen via de cookie‑banner of de privacyvoorkeuren.</p>
+		</section>
+
+		<section>
+			<h2>4. Derden en externe diensten</h2>
+			<p>Sommige diensten (bijv. analytics of advertentienetwerken) kunnen gegevens verwerken. Wij laden zulke scripts alleen wanneer u toestemming geeft via de cookie‑instellingen.</p>
+		</section>
+
+		<section>
+			<h2>5. Uw rechten</h2>
+			<ul>
+				<li>Toegang tot uw gegevens.</li>
+				<li>Correctie of verwijdering van onjuiste gegevens.</li>
+				<li>Beperking van of bezwaar tegen verwerking.</li>
+				<li>Intrekken van toestemming wanneer die is gegeven.</li>
+			</ul>
+			<p>Neem contact op via de gegevens hieronder om uw rechten uit te oefenen.</p>
+		</section>
+
+		<section>
+			<h2>6. Contact</h2>
+			<p>Voor vragen over privacy of het uitoefenen van uw rechten, stuur een e‑mail naar: <a href="mailto:privacy@camaris.example">privacy@camaris.be</a>.</p>
+		</section>
+
+		<section>
+			<h2>7. Wijzigingen in dit beleid</h2>
+			<p>Wij kunnen dit privacybeleid bijwerken. De datum van inwerkingtreding staat onderaan deze pagina.</p>
 		</section>
 	</main>
 
@@ -73,7 +91,7 @@
 		</div>
 	</footer>
 
-	<!-- Cookie banner -->
+	<!-- Cookie banner (same as index) -->
 	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
 		<div class="cookie-inner container">
 			<div class="cookie-text">
@@ -87,7 +105,7 @@
 		</div>
 	</div>
 
-	<!-- Cookie preferences modal -->
+	<!-- Cookie preferences modal (same as index) -->
 	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
 		<div class="cookie-modal-content">
 			<header>
@@ -131,6 +149,6 @@
 		document.getElementById('year').textContent = new Date().getFullYear();
 	</script>
 
-	<!-- cookie management script -->
-	<script src="js/cookies.js" defer></script></body>
+	<script src="js/cookies.js" defer></script>
+</body>
 </html>
