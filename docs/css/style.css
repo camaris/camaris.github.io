@@ -7,7 +7,9 @@
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-	font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	/* font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
+	/* font-family: 'Nunito', sans-serif; */
+	font-family: "Gloria Hallelujah", cursive;
 	margin:0;
 	background:var(--bg-body);
 	color:var(--text-primary);
@@ -138,6 +140,12 @@ body{
 }
 .card h3{margin-top:0}
 .bio{padding:1.25rem}
+
+/* Contact page additions */
+.contact-visual{
+	display:flex;
+	align-items:center;
+}
 
 /* Page content */
 .page{padding:2rem 0}

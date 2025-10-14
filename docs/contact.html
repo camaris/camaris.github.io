@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Bewust-er zijn — Contact</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Delius&family=Gloria+Hallelujah&family=Playwrite+AU+TAS:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 </head>
@@ -30,28 +33,33 @@
 	</header>
 
 	<main class="container">
-		<section class="page contact">
-			<h1>Contact</h1>
-			<p class="lead">I'd love to hear from you. Send a brief message and I'll respond soon.</p>
+		<section class="page contact grid grid-2">
+			<div>
+				<h1>Contact</h1>
+				<p class="lead">I'd love to hear from you. Send a brief message and I'll respond soon.</p>
 
-			<form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
-				<label>
-					Name
-					<input type="text" name="name" required>
-				</label>
-				<label>
-					Email
-					<input type="email" name="email" required>
-				</label>
-				<label>
-					Message
-					<textarea name="message" rows="6" required></textarea>
-				</label>
-				<div class="form-actions">
-					<button class="btn" type="submit">Send</button>
-					<a class="btn ghost" href="index.html">Cancel</a>
-				</div>
-			</form>
+				<form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+					<label>
+						Name
+						<input type="text" name="name" required>
+					</label>
+					<label>
+						Email
+						<input type="email" name="email" required>
+					</label>
+					<label>
+						Message
+						<textarea name="message" rows="6" required></textarea>
+					</label>
+					<div class="form-actions">
+						<button class="btn" type="submit">Send</button>
+						<a class="btn ghost" href="index.html">Cancel</a>
+					</div>
+				</form>
+			</div>
+			<div class="contact-visual">
+				<img src="img/1.png" alt="Logo Coaching" style="width: 100%;">
+			</div>
 		</section>
 	</main>
 
