@@ -1,1 +1,134 @@
-bewusterzijn - docs
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Bewust-er zijn - Home</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- ...existing head content... -->
+	<!-- added cookie styles -->
+	<link rel="stylesheet" href="css/cookies.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html">Bewust-er zijn</a>
+
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
+				<span></span>
+			</label>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="intro container">
+			<div class="grid grid-3">
+				<div class="container">
+					<img src="img/Logo.png" alt="Logo Coaching" style="width: 60%;">
+				</div>
+				<div class="container">
+					<h1>Clarity. Progress. Confidence.</h1>
+					<p>Personal coaching and tailored plans to help you reach professional and personal goals.</p>
+					<p><a class="btn" href="contact.html">Let's talk</a> <a class="btn ghost" href="services.html">See services</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="intro container">
+			<h2>How we help</h2>
+			<div class="grid grid-3">
+				<div class="card">
+					<h3>One-on-one coaching</h3>
+					<p>Focused sessions that identify obstacles and create actionable plans.</p>
+				</div>
+				<div class="card">
+					<h3>Workshops</h3>
+					<p>Interactive workshops to build skills and team alignment.</p>
+				</div>
+				<div class="card">
+					<h3>Continuous support</h3>
+					<p>Follow-up and accountability to keep momentum.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Sofie Coach — All rights reserved.</p>
+			<p><a href="privacy.html" aria-hidden="true">Privacy</a></p>
+		</div>
+	</footer>
+
+	<!-- Cookie banner -->
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
+		<div class="cookie-inner container">
+			<div class="cookie-text">
+				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
+			</div>
+			<div class="cookie-actions">
+				<button id="cookie-accept" class="btn">Accept all</button>
+				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cookie preferences modal -->
+	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
+		<div class="cookie-modal-content">
+			<header>
+				<h2 id="cookie-modal-title">Cookie preferences</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
+			</header>
+			<form id="cookie-form">
+				<p>Select which cookies you allow.</p>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-essential" checked disabled>
+						Essential (required)
+					</label>
+					<p class="muted">Necessary for the website to work.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-analytics">
+						Analytics
+					</label>
+					<p class="muted">Help us understand how the site is used.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-marketing">
+						Marketing
+					</label>
+					<p class="muted">Used to show relevant content.</p>
+				</div>
+
+				<div class="modal-actions">
+					<button type="button" id="pref-save" class="btn">Save preferences</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		// small script to set the current year
+		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+
+	<!-- cookie management script -->
+	<script src="js/cookies.js" defer></script>
+</body>
+</html>

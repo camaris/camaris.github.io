@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Bewust-er zijn — About</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html">Bewust-er zijn — About</a>
+
+			<input id="nav-toggle-3" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle-3">
+				<span></span>
+			</label>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html" class="active">About</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="page about">
+			<h1>About Sofie</h1>
+			<p class="lead">Passionate coach helping professionals unlock potential.</p>
+
+			<div class="grid grid-2">
+				<div>
+					<p>Sofie has 10+ years of experience working with individuals and teams across industries. Her approach combines practical frameworks, empathy and measurable milestones to achieve lasting change.</p>
+					<ul>
+						<li>Certified coach with experience in leadership development</li>
+						<li>Practical, results-oriented coaching</li>
+						<li>Remote and in-person sessions available</li>
+					</ul>
+				</div>
+				<div>
+					<div class="card bio">
+						<h3>Philosophy</h3>
+						<p>Small, consistent actions lead to exponential improvements. Coaching should be simple, focused and measurable.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<p>© <span id="year-about"></span> Sofie Coach</p>
+		</div>
+	</footer>
+
+	<script>document.getElementById('year-about').textContent = new Date().getFullYear();</script>
+</body>
+</html>
