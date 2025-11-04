@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('beforeend', data);
+            
+            const script = document.createElement('script');
+            script.src = 'js/cookies.js';
+            script.onload = function() {
+                initCookieConsent(); // Initialize cookie consent logic
+            };
+            document.body.appendChild(script);
         });
 
     // Load privacy content if on privacy page

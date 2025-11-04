@@ -1,3 +1,4 @@
+function initCookieConsent() {
 (function () {
 	const KEY = 'site_cookie_prefs_v1';
 
@@ -116,14 +117,6 @@
 	}
 
 	// Initialize on load
-	document.addEventListener('DOMContentLoaded', function () {
-		const prefs = loadPrefs();
-		if (!prefs) {
-			// show banner if no prefs stored
-			showBanner();
-		} else {
-			applyPrefs(prefs);
-			hideBanner();
-		}
-	});
+
 })();
+}
