@@ -1,0 +1,52 @@
+<!-- Cookie banner -->
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-toestemming" aria-hidden="true">
+		<div class="cookie-inner container">
+			<div class="cookie-text">
+				<p><strong>Wij gebruiken cookies</strong> — We gebruiken essentiële cookies en uw voorkeuren voor analytics en marketing om de site te verbeteren.</p>
+			</div>
+			<div class="cookie-actions">
+				<button id="cookie-accept" class="btn">Alles accepteren</button>
+				<button id="cookie-reject" class="btn ghost">Niet-essentiële weigeren</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie-voorkeuren</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Cookie preferences modal -->
+	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
+		<div class="cookie-modal-content">
+			<header>
+				<h2 id="cookie-modal-title">Cookie-voorkeuren</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Voorkeuren sluiten">×</button>
+			</header>
+			<form id="cookie-form">
+				<p>Selecteer welke cookies u toestaat.</p>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-essential" checked disabled>
+						Essentieel (vereist)
+					</label>
+					<p class="muted">Noodzakelijk voor het functioneren van de website.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-analytics">
+						Analytics
+					</label>
+					<p class="muted">Helpt ons te begrijpen hoe de site wordt gebruikt.</p>
+				</div>
+				<div class="pref-row">
+					<label>
+						<input type="checkbox" id="pref-marketing">
+						Marketing
+					</label>
+					<p class="muted">Gebruikt om relevante inhoud te tonen.</p>
+				</div>
+	
+				<div class="modal-actions">
+					<button type="button" id="pref-save" class="btn">Voorkeuren opslaan</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Annuleren</button>
+				</div>
+			</form>
+		</div>
+	</div>
