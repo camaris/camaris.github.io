@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
     // Load cookie banner
-    fetch("_cookie_banner.html")
+    fetch("cookie_banner.html")
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('beforeend', data);
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Load privacy content if on privacy page
     if (window.location.pathname.endsWith("privacy.html")) {
-        fetch("_privacy_content.html")
+        fetch("privacy_content.html")
             .then(response => response.text())
             .then(data => {
                 document.querySelector("main.container").innerHTML = data;
