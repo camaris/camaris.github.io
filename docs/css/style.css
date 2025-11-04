@@ -196,4 +196,5 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.container{padding:1rem}
 	.hero h1{font-size:1.5rem}
+	.hide-on-mobile { display: none; }
 }
