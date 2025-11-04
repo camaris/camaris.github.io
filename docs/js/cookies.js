@@ -1,5 +1,4 @@
 function initCookieConsent() {
-(function () {
 	const KEY = 'site_cookie_prefs_v1';
 
 	// Elements
@@ -117,6 +116,12 @@ function initCookieConsent() {
 	}
 
 	// Initialize on load
-
-})();
+	const prefs = loadPrefs();
+	if (!prefs) {
+		// show banner if no prefs stored
+		showBanner();
+	} else {
+		applyPrefs(prefs);
+		hideBanner();
+	}
 }
