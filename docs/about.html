@@ -1,32 +1,32 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Bewust-er zijn — About</title>
+	<meta name="description" content="Mijn persoonlijke reis van hoofd naar hart, en hoe lichaamsgerichte coaching en energetisch werk mij hielpen om thuis te komen in mijn lichaam." />
+	<title>Bewust-er zijn — Over Mij</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Delius&family=Gloria+Hallelujah&family=Playwrite+AU+TAS:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 	
 </head>
 <body>
 	<header class="site-header">
 		<div class="container header-inner">
-			<a class="brand" href="index.html">Bewust-er zijn — About</a>
+			<a class="brand" href="index.html">Bewust-er zijn — Over Mij</a>
 
-			<input id="nav-toggle-3" type="checkbox" />
-			<label class="nav-toggle-label" for="nav-toggle-3">
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
 				<span></span>
 			</label>
 
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="about.html" class="active">About</a></li>
+					<li><a href="services.html">Aanbod</a></li>
+					<li><a href="about.html" class="active">Over mij</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -35,13 +35,16 @@
 
 	<main class="container">
 		<section class="page about">
-			<h1>About Me</h1>
-			<p class="lead">Passionate coach helping you to unlock your potential.</p>
+			<h1>Over Mij</h1>
+			<p class="lead">Gepassioneerde coach die je helpt je potentieel te ontsluiten.</p>
 
 			<div class="grid grid-2">
 
 				<div class="card">
 					<h2>🌿 Over Mij</h2>
+					<blockquote>
+						<p>Hallo! Ik ben Sofie Casselman, een gepassioneerde life-coach en yoga docent met een sterke focus op energetische en lichaamsgericht werk. Mijn missie is om mensen te begeleiden naar meer balans, zowel fysiek als mentaal!</p>
+					</blockquote>
 					<p>Ik ben zelf lang op zoek geweest naar de juiste vorm van therapie.</p>
 					
 					<p>Jarenlang volgde ik praattherapie, maar hoe goed ik het allemaal ook begreep, er
@@ -63,31 +66,31 @@
 					dat heling mogelijk is wanneer we weer thuiskomen in ons lichaam — daar waar onze ware
 					kracht, wijsheid en rust al die tijd al aanwezig waren.</p>
 				</div>
-				<img src="img/about_me.png" alt="Logo Coaching" style="width: 100%;"/>
+				<img src="img/about_me.png" alt="Een foto van Sofie Casselman, de coach achter Bewust-er zijn." style="width: 100%;"/>
 			</div>
 		</section>
 	</main>
 
 	<footer class="site-footer">
 		<div class="container footer-inner">
-			<p>© <span id="year"></span> camaris</p>
+			<p>© <span id="year"></span> camaris — Alle rechten voorbehouden.</p>
 			<p>
-				<a href="privacy.html" aria-hidden="true">Privacy Statement</a>
-				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie preferences">Privacy settings</button>
+				<a href="privacy.html">Privacyverklaring</a>
+				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie-instellingen">Privacy-instellingen</button>
 			</p>
 		</div>
 	</footer>
 
 	<!-- Cookie banner -->
-	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-toestemming" aria-hidden="true">
 		<div class="cookie-inner container">
 			<div class="cookie-text">
-				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
+				<p><strong>Wij gebruiken cookies</strong> — We gebruiken essentiële cookies en uw voorkeuren voor analytics en marketing om de site te verbeteren.</p>
 			</div>
 			<div class="cookie-actions">
-				<button id="cookie-accept" class="btn">Accept all</button>
-				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
-				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
+				<button id="cookie-accept" class="btn">Alles accepteren</button>
+				<button id="cookie-reject" class="btn ghost">Niet-essentiële weigeren</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie-voorkeuren</button>
 			</div>
 		</div>
 	</div>
@@ -96,36 +99,36 @@
 	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
 		<div class="cookie-modal-content">
 			<header>
-				<h2 id="cookie-modal-title">Cookie preferences</h2>
-				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
+				<h2 id="cookie-modal-title">Cookie-voorkeuren</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Voorkeuren sluiten">×</button>
 			</header>
 			<form id="cookie-form">
-				<p>Select which cookies you allow.</p>
+				<p>Selecteer welke cookies u toestaat.</p>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-essential" checked disabled>
-						Essential (required)
+						Essentieel (vereist)
 					</label>
-					<p class="muted">Necessary for the website to work.</p>
+					<p class="muted">Noodzakelijk voor het functioneren van de website.</p>
 				</div>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-analytics">
 						Analytics
 					</label>
-					<p class="muted">Help us understand how the site is used.</p>
+					<p class="muted">Helpt ons te begrijpen hoe de site wordt gebruikt.</p>
 				</div>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-marketing">
 						Marketing
 					</label>
-					<p class="muted">Used to show relevant content.</p>
+					<p class="muted">Gebruikt om relevante inhoud te tonen.</p>
 				</div>
-
+	
 				<div class="modal-actions">
-					<button type="button" id="pref-save" class="btn">Save preferences</button>
-					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
+					<button type="button" id="pref-save" class="btn">Voorkeuren opslaan</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Annuleren</button>
 				</div>
 			</form>
 		</div>

@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Ontdek het aanbod van lichaamsgerichte coaching: van energetisch werk en zenuwstelselregulatie tot meditatie, yoga en opstellingswerk." />
 	<title>Bewust-er zijn - Aanbod</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Delius&family=Gloria+Hallelujah&family=Playwrite+AU+TAS:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 </head>
 <body>
@@ -16,16 +16,16 @@
 		<div class="container header-inner">
 			<a class="brand" href="index.html">Bewust-er zijn — Aanbod</a>
 
-			<input id="nav-toggle-2" type="checkbox" />
-			<label class="nav-toggle-label" for="nav-toggle-2">
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
 				<span></span>
 			</label>
 
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html" class="active">Services</a></li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="services.html" class="active">Aanbod</a></li>
+					<li><a href="about.html">Over mij</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
@@ -33,35 +33,31 @@
 	</header>
 
 	<main class="container">
-		<h1>Services</h1>
-		<p class="lead">Flexible offerings tailored to your needs.</p>
+		<h1>Aanbod</h1>
+		<p class="lead">Flexibele diensten, afgestemd op jouw noden.</p>
 		<section class="page contact grid grid-2">
 			<div>
 				<div class="grid grid-2">
 					<div class="card">
-						<h3>Personal Coaching</h3>
-						<p>Weekly sessions focused on goal setting, habits, and accountability.</p>
+						<h3>Persoonlijke Coaching</h3>
+						<p>Wekelijkse sessies gericht op het stellen van doelen, gewoonten en accountability.</p>
 					</div>
 					<div class="card">
-						<h3>Team Workshops</h3>
-						<p>Custom workshops to improve collaboration and leadership skills.</p>
+						<h3>Prestatie Plannen</h3>
+						<p>Data-gedreven plannen om vooruitgang en resultaten te meten.</p>
 					</div>
 					<div class="card">
-						<h3>Performance Plans</h3>
-						<p>Data-driven plans to measure progress and deliverables.</p>
+						<h3>Coaching op Afstand</h3>
+						<p>Flexibele online sessies die passen in een drukke agenda.</p>
 					</div>
 					<div class="card">
-						<h3>Remote Coaching</h3>
-						<p>Flexible online sessions to fit busy schedules.</p>
-					</div>
-					<div class="card">
-						<h3>Follow-up & Accountability</h3>
-						<p>Check-ins and course-corrections to sustain growth.</p>
+						<h3>Opvolging & Accountability</h3>
+						<p>Check-ins en bijsturingen om groei te ondersteunen.</p>
 					</div>
 				</div>
 			</div>
 			<div class="services-visual">
-				<img src="img/sand.png" alt="Logo Sand" style="width: 100%;">
+				<img src="img/sand.png" alt="Het logo van Bewust-er zijn getekend in het zand." style="width: 100%;">
 			</div>
 		</section>
 		<section class="page contact grid grid-1">
@@ -157,70 +153,8 @@
 		<div class="container footer-inner">
 			<p>© <span id="year"></span> camaris</p>
 			<p>
-				<a href="privacy.html" aria-hidden="true">Privacy Statement</a>
-				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie preferences">Privacy settings</button>
+				<a href="privacy.html">Privacyverklaring</a>
+				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie-instellingen">Privacy-instellingen</button>
 			</p>
 		</div>
 	</footer>
-
-	<!-- Cookie banner -->
-	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
-		<div class="cookie-inner container">
-			<div class="cookie-text">
-				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
-			</div>
-			<div class="cookie-actions">
-				<button id="cookie-accept" class="btn">Accept all</button>
-				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
-				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
-			</div>
-		</div>
-	</div>
-
-	<!-- Cookie preferences modal -->
-	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
-		<div class="cookie-modal-content">
-			<header>
-				<h2 id="cookie-modal-title">Cookie preferences</h2>
-				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
-			</header>
-			<form id="cookie-form">
-				<p>Select which cookies you allow.</p>
-				<div class="pref-row">
-					<label>
-						<input type="checkbox" id="pref-essential" checked disabled>
-						Essential (required)
-					</label>
-					<p class="muted">Necessary for the website to work.</p>
-				</div>
-				<div class="pref-row">
-					<label>
-						<input type="checkbox" id="pref-analytics">
-						Analytics
-					</label>
-					<p class="muted">Help us understand how the site is used.</p>
-				</div>
-				<div class="pref-row">
-					<label>
-						<input type="checkbox" id="pref-marketing">
-						Marketing
-					</label>
-					<p class="muted">Used to show relevant content.</p>
-				</div>
-
-				<div class="modal-actions">
-					<button type="button" id="pref-save" class="btn">Save preferences</button>
-					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
-				</div>
-			</form>
-		</div>
-	</div>
-
-	<script>
-		// small script to set the current year
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
-
-	<!-- cookie management script -->
-	<script src="js/cookies.js" defer></script></body>
-</html>

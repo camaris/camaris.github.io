@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Neem contact op voor een gratis kennismakingsgesprek. Ik hoor graag van je en beantwoord je bericht zo snel mogelijk." />
 	<title>Bewust-er zijn — Contact</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Delius&family=Gloria+Hallelujah&family=Playwrite+AU+TAS:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 </head>
 <body>
@@ -16,16 +16,16 @@
 		<div class="container header-inner">
 			<a class="brand" href="index.html">Bewust-er zijn — Contact</a>
 
-			<input id="nav-toggle-4" type="checkbox" />
-			<label class="nav-toggle-label" for="nav-toggle-4">
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
 				<span></span>
 			</label>
 
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Aanbod</a></li>
+					<li><a href="about.html">Over mij</a></li>
 					<li><a href="contact.html" class="active">Contact</a></li>
 				</ul>
 			</nav>
@@ -36,53 +36,53 @@
 		<section class="page contact grid grid-2">
 			<div>
 				<h1>Contact</h1>
-				<p class="lead">I'd love to hear from you. Send a brief message and I'll respond soon.</p>
+				<p class="lead">Ik hoor graag van je. Stuur een kort bericht en ik neem snel contact met je op.</p>
 
-				<form class="contact-form" action="mailto:hello@example.com" method="post" enctype="text/plain">
+				<form class="contact-form" id="contact-form">
 					<label>
-						Name
-						<input type="text" name="name" required>
+						Naam
+						<input type="text" id="name" name="name" required>
 					</label>
 					<label>
-						Email
-						<input type="email" name="email" required>
+						E-mail
+						<input type="email" id="email" name="email" required>
 					</label>
 					<label>
-						Message
-						<textarea name="message" rows="6" required></textarea>
+						Bericht
+						<textarea id="message" name="message" rows="6" required></textarea>
 					</label>
 					<div class="form-actions">
-						<button class="btn" type="submit">Send</button>
-						<a class="btn ghost" href="index.html">Cancel</a>
+						<button class="btn" type="submit">Verstuur</button>
+						<a class="btn ghost" href="index.html">Annuleren</a>
 					</div>
 				</form>
 			</div>
 			<div class="contact-visual">
-				<img src="img/1.png" alt="Logo Coaching" style="width: 100%;">
+				<img src="img/1.png" alt="Een vrouw die uitkijkt over de zee." style="width: 100%;">
 			</div>
 		</section>
 	</main>
 
 	<footer class="site-footer">
 		<div class="container footer-inner">
-			<p>© <span id="year"></span> camaris — All rights reserved.</p>
+			<p>© <span id="year"></span> camaris — Alle rechten voorbehouden.</p>
 			<p>
-				<a href="privacy.html" aria-hidden="true">Privacy Statement</a>
-				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie preferences">Privacy settings</button>
+				<a href="privacy.html">Privacyverklaring</a>
+				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie-instellingen">Privacy-instellingen</button>
 			</p>
 		</div>
 	</footer>
 
 	<!-- Cookie banner -->
-	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-toestemming" aria-hidden="true">
 		<div class="cookie-inner container">
 			<div class="cookie-text">
-				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
+				<p><strong>Wij gebruiken cookies</strong> — We gebruiken essentiële cookies en uw voorkeuren voor analytics en marketing om de site te verbeteren.</p>
 			</div>
 			<div class="cookie-actions">
-				<button id="cookie-accept" class="btn">Accept all</button>
-				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
-				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
+				<button id="cookie-accept" class="btn">Alles accepteren</button>
+				<button id="cookie-reject" class="btn ghost">Niet-essentiële weigeren</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie-voorkeuren</button>
 			</div>
 		</div>
 	</div>
@@ -91,36 +91,36 @@
 	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
 		<div class="cookie-modal-content">
 			<header>
-				<h2 id="cookie-modal-title">Cookie preferences</h2>
-				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
+				<h2 id="cookie-modal-title">Cookie-voorkeuren</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Voorkeuren sluiten">×</button>
 			</header>
 			<form id="cookie-form">
-				<p>Select which cookies you allow.</p>
+				<p>Selecteer welke cookies u toestaat.</p>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-essential" checked disabled>
-						Essential (required)
+						Essentieel (vereist)
 					</label>
-					<p class="muted">Necessary for the website to work.</p>
+					<p class="muted">Noodzakelijk voor het functioneren van de website.</p>
 				</div>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-analytics">
 						Analytics
 					</label>
-					<p class="muted">Help us understand how the site is used.</p>
+					<p class="muted">Helpt ons te begrijpen hoe de site wordt gebruikt.</p>
 				</div>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-marketing">
 						Marketing
 					</label>
-					<p class="muted">Used to show relevant content.</p>
+					<p class="muted">Gebruikt om relevante inhoud te tonen.</p>
 				</div>
-
+	
 				<div class="modal-actions">
-					<button type="button" id="pref-save" class="btn">Save preferences</button>
-					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
+					<button type="button" id="pref-save" class="btn">Voorkeuren opslaan</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Annuleren</button>
 				</div>
 			</form>
 		</div>
@@ -129,6 +129,18 @@
 	<script>
 		// small script to set the current year
 		document.getElementById('year').textContent = new Date().getFullYear();
+	</script>
+
+	<script>
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			const name = document.getElementById('name').value;
+			const email = document.getElementById('email').value;
+			const message = document.getElementById('message').value;
+			const subject = 'Contactformulier via website';
+			const body = `Naam: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0ABericht:%0D%0A${message}`;
+			window.location.href = `mailto:privacy@camaris.be?subject=${subject}&body=${body}`;
+		});
 	</script>
 
 	<!-- cookie management script -->

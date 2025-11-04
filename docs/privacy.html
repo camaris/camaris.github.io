@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="Lees het privacybeleid van Bewust-er zijn. We leggen uit welke gegevens we verzamelen, waarom, en welke rechten je hebt." />
 	<title>Privacy — Bewust-er zijn</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,10 +25,9 @@
 			<nav class="nav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="about.html">About</a></li>
+					<li><a href="services.html">Aanbod</a></li>
+					<li><a href="about.html">Over mij</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<!-- <li><a href="privacy.html" class="active">Privacy</a></li> -->
 				</ul>
 			</nav>
 		</div>
@@ -89,22 +89,22 @@
 		<div class="container footer-inner">
 			<p>© <span id="year"></span> camaris</p>
 			<p>
-				<a href="privacy.html" aria-hidden="true">Privacy Statement</a>
-				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie preferences">Privacy settings</button>
+				<a href="privacy.html">Privacyverklaring</a>
+				<button id="open-cookie-settings" class="btn ghost" aria-haspopup="dialog" title="Open cookie-instellingen">Privacy-instellingen</button>
 			</p>
 		</div>
 	</footer>
 
 	<!-- Cookie banner (same as index) -->
-	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie consent" aria-hidden="true">
+	<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie-toestemming" aria-hidden="true">
 		<div class="cookie-inner container">
 			<div class="cookie-text">
-				<p><strong>We use cookies</strong> — We use essential cookies and your choices for analytics and marketing to improve the site.</p>
+				<p><strong>Wij gebruiken cookies</strong> — We gebruiken essentiële cookies en uw voorkeuren voor analytics en marketing om de site te verbeteren.</p>
 			</div>
 			<div class="cookie-actions">
-				<button id="cookie-accept" class="btn">Accept all</button>
-				<button id="cookie-reject" class="btn ghost">Reject non‑essential</button>
-				<button id="cookie-preferences" class="btn ghost">Cookie preferences</button>
+				<button id="cookie-accept" class="btn">Alles accepteren</button>
+				<button id="cookie-reject" class="btn ghost">Niet-essentiële weigeren</button>
+				<button id="cookie-preferences" class="btn ghost">Cookie-voorkeuren</button>
 			</div>
 		</div>
 	</div>
@@ -113,36 +113,36 @@
 	<div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cookie-modal-title">
 		<div class="cookie-modal-content">
 			<header>
-				<h2 id="cookie-modal-title">Cookie preferences</h2>
-				<button id="cookie-modal-close" class="modal-close" aria-label="Close preferences">×</button>
+				<h2 id="cookie-modal-title">Cookie-voorkeuren</h2>
+				<button id="cookie-modal-close" class="modal-close" aria-label="Voorkeuren sluiten">×</button>
 			</header>
 			<form id="cookie-form">
-				<p>Select which cookies you allow.</p>
+				<p>Selecteer welke cookies u toestaat.</p>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-essential" checked disabled>
-						Essential (required)
+						Essentieel (vereist)
 					</label>
-					<p class="muted">Necessary for the website to work.</p>
+					<p class="muted">Noodzakelijk voor het functioneren van de website.</p>
 				</div>
 				<div class="pref-row">
 					<label>
 						<input type="checkbox" id="pref-analytics">
 						Analytics
 					</label>
-					<p class="muted">Help us understand how the site is used.</p>
+					<p class="muted">Helpt ons te begrijpen hoe de site wordt gebruikt.</p>
 				</div>
-				<div class="pref-row">
+				<div class_="pref-row">
 					<label>
 						<input type="checkbox" id="pref-marketing">
 						Marketing
 					</label>
-					<p class="muted">Used to show relevant content.</p>
+					<p class="muted">Gebruikt om relevante inhoud te tonen.</p>
 				</div>
 
 				<div class="modal-actions">
-					<button type="button" id="pref-save" class="btn">Save preferences</button>
-					<button type="button" id="pref-cancel" class="btn ghost">Cancel</button>
+					<button type="button" id="pref-save" class="btn">Voorkeuren opslaan</button>
+					<button type="button" id="pref-cancel" class="btn ghost">Annuleren</button>
 				</div>
 			</form>
 		</div>

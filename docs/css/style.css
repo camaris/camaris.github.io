@@ -8,12 +8,16 @@
 html,body{height:100%}
 body{
 	/* font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; */
-	/* font-family: 'Nunito', sans-serif; */
-	font-family: "Gloria Hallelujah", cursive;
+	font-family: 'Nunito', sans-serif;
+	/* font-family: "Gloria Hallelujah", cursive; */
 	margin:0;
 	background:var(--bg-body);
 	color:var(--text-primary);
 	line-height:1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Gloria Hallelujah", cursive;
 }
 
 .container{
@@ -76,7 +80,7 @@ body{
 .nav-toggle-label span::before{top:-6px}
 .nav-toggle-label span::after{top:6px}
 
-#nav-toggle, #nav-toggle-2, #nav-toggle-3, #nav-toggle-4{
+#nav-toggle{
 	display:none;
 }
 
@@ -187,10 +191,7 @@ body{
 	.nav ul{flex-direction:column; gap:0.25rem}
 	.nav a{padding:.8rem 1rem}
 	.nav-toggle-label{display:flex}
-	#nav-toggle:checked + .nav-toggle-label + .nav,
-	#nav-toggle-2:checked + .nav-toggle-label + .nav,
-	#nav-toggle-3:checked + .nav-toggle-label + .nav,
-	#nav-toggle-4:checked + .nav-toggle-label + .nav{
+	#nav-toggle:checked + .nav-toggle-label + .nav{
 		display:block;
 	}
 	.container{padding:1rem}
