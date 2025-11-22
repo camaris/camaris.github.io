@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLWTHL1JG5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JLWTHL1JG5');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description"
+        content="Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in je lichaam en vind rust, kracht en helderheid." />
+    <title>Bewust-er zijn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- added cookie styles -->
+    <link rel="stylesheet" href="css/cookies.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Modal Styles */
+        .modal-backdrop {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-backdrop.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: var(--bg-surface);
+            padding: 2rem;
+            border-radius: var(--radius);
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: var(--shadow-hover);
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-backdrop.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .modal-close:hover {
+            color: var(--text-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">Bewust-er zijn</a>
+
+            <input id="nav-toggle" type="checkbox" />
+            <label class="nav-toggle-label" for="nav-toggle">
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Aanbod</a></li>
+                    <li><a href="#about">Over mij</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Rust. Kracht. Helderheid.</h1>
+                <p>Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in
+                    je lichaam.</p>
+                <div style="margin-top: 2rem;">
+                    <a class="btn" href="#contact">Neem contact op</a>
+                    <a class="btn ghost" href="#services" style="margin-left: 1rem;">Bekijk het aanbod</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2>Hoe we willen helpen</h2>
+                <p class="lead" style="max-width: 700px; margin: 0 auto;">Een holistische aanpak om weer in verbinding
+                    te komen met jezelf.</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Meditatie & Yoga Initiaties</h3>
+                    <p>Je leert te voelen, te aarden en te vertrouwen op wat je lijf je vertelt. Eenvoudige oefeningen
+                        voor dagelijkse rust.</p>
+                    <a href="#services">Lees meer &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Opstellingswerk</h3>
+                    <p>Lichaamsgericht werken helpt om blokkades te doorbreken en opnieuw in stroming te komen.
+                        Systemisch kijken naar patronen.</p>
+                    <a href="#services">Lees meer &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Innerlijk Kind Werk</h3>
+                    <p>Vrijmaken van vastgezette emoties en het transformeren van beperkende overtuigingen uit het
+                        verleden.</p>
+                    <a href="#services">Lees meer &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Ademwerk & Tapping</h3>
+                    <p>Helderheid, ruimte en zelfverbinding door het zenuwstelsel in rust te brengen met krachtige
+                        technieken.</p>
+                    <a href="#services">Lees meer &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" style="padding-top: 6rem;">
+            <div class="container" style="padding-bottom: 2rem;">
+                <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1>Aanbod</h1>
+                    <p class="lead">Flexibele formules, afgestemd op jouw noden.</p>
+                </div>
+            </div>
+
+            <div class="container grid grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <h2>Het Fysieke Lichaam: De Poort naar een Lichter Leven</h2>
+                    <p>Ons fysieke lichaam is ons anker in het hier en nu. Het vertelt ons voortdurend hoe het écht
+                        met ons gaat. In ons lichaam ervaren we onze gevoelens, spreekt onze intuïtie tot ons, en
+                        stroomt onze energie. Ook onze gedachten en overtuigingen laten er hun sporen na.</p>
+
+                    <p>Ons lichaam kent geen tijd of ruimte. Wat in het verleden is gebeurd, kan vandaag nog
+                        steeds als bedreigend aanvoelen. Zo kan trauma zich vastzetten, zelfs als we het "met ons
+                        hoofd" allang hebben begrepen.</p>
+
+                    <p>Daarom vertrek ik in mijn coaching altijd <strong>vanuit het lichaam zelf</strong>.</p>
+
+                    <p>Ik begeleid via verschillende vormen van lichaamsgericht werk:</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;"><span
+                                style="position: absolute; left: 0; color: var(--color-primary);">•</span>
+                            <strong>Opstellingswerk en energetisch werk</strong>
+                        </li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;"><span
+                                style="position: absolute; left: 0; color: var(--color-primary);">•</span>
+                            <strong>Trance-
+                                en hypnosewerk</strong> (onderbewustzijn en innerlijk kind)</li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;"><span
+                                style="position: absolute; left: 0; color: var(--color-primary);">•</span>
+                            <strong>Zenuwstelselregulatie</strong> (ademwerk en tapping)
+                        </li>
+                        <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;"><span
+                                style="position: absolute; left: 0; color: var(--color-primary);">•</span> <strong>Yoga
+                                en
+                                meditatie-initiatie</strong> (bewustwording, gronding en vertrouwen)</li>
+                    </ul>
+                </div>
+                <div class="services-visual hide-on-mobile">
+                    <img src="img/sand.png" alt="Het logo van Bewust-er zijn getekend in het zand."
+                        style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-soft);">
+                </div>
+            </div>
+
+            <div class="container" style="margin-top: 4rem;">
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>Meditatie & Yoga Initiaties</h3>
+                        <p>Contact met het lichaam is de basis van alles. In onze moderne wereld verliezen we dat
+                            contact al vroeg. Met meditatie en yoga leer je opnieuw <em>thuis te komen in je
+                                lichaam</em>.
+                        </p>
+
+                        <p>Je leert te voelen, te aarden en te vertrouwen op wat je lijf je vertelt. Je leert het
+                            verschil
+                            herkennen tussen angstgedreven reacties en je gezonde intuïtie.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Opstellingswerk & Lichaamswerk</h3>
+                        <p>Met ons hoofd kunnen we vaak veel begrijpen, maar dat betekent niet dat het ook ín ons
+                            lichaam geheeld is. Via opstellingen en lichaamswerk <em>laten we het lichaam spreken</em>.
+                        </p>
+
+                        <p>We geven innerlijke dynamieken letterlijk ruimte en vorm, waardoor je onverwachte inzichten
+                            krijgt in wat er werkelijk in je leeft.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Trance & Hypnose Werk</h3>
+                        <p>In ons onderbewustzijn leven overtuigingen, emoties en herinneringen die we met ons
+                            bewuste verstand niet altijd kunnen bereiken. Via een lichte trance verbinden we met het
+                            onderbewuste.</p>
+
+                        <p>Zo werken we met innerlijk kind heling, het vrijmaken van <em>vastgezette emoties</em> en het
+                            transformeren van <em>beperkende overtuigingen</em>.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Werken met het Zenuwstelsel</h3>
+                        <p>Wanneer we getriggerd worden, reageert ons lichaam razendsnel. Door technieken als
+                            <em>bewuste
+                                ademhaling</em> en <em>tapping</em> brengen we het zenuwstelsel weer in rust.</p>
+
+                        <p>Vanuit die rust ontstaat helderheid, ruimte en zelfverbinding. Wanneer het lichaam zich
+                            veilig
+                            voelt, kunnen we dieper kijken naar de oorzaak.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="page about" style="padding-top: 6rem;">
+            <div class="container">
+                <div class="grid grid-2" style="align-items: start; gap: 4rem;">
+                    <div class="card">
+                        <h2>🌿 Over Mij</h2>
+                        <p>Ik ben zelf lang op zoek geweest naar de juiste vorm van therapie.</p>
+
+                        <p>Jarenlang volgde ik praattherapie, maar hoe goed ik het allemaal ook begreep, er
+                            veranderde vanbinnen weinig. Ik wist wát er aan de hand was, maar voelde geen echte
+                            beweging. Mijn hoofd leek het te snappen, maar mijn lichaam vertelde een ander verhaal.</p>
+
+                        <p>Die zoektocht bracht me uiteindelijk naar India, waar ik mijn <em>Yoga Teacher Training</em>
+                            volgde
+                            en me verdiepte in de <em>oosterse filosofie</em>. Daar begon ik te ontdekken dat de
+                            antwoorden
+                            niet altijd in het denken liggen, maar in het <em>voelen</em> — in de subtiele taal van het
+                            lichaam,
+                            emoties en energie.</p>
+
+                        <p>Vanuit die ervaring verdiepte ik me verder in <em>energetisch werk en lichaamsgerichte
+                                coaching</em>. Langzaam begon alles lichter te voelen. Er kwamen lagen omhoog waarvan ik
+                            niet eens wist dat ze er waren — oude emoties, overtuigingen, herinneringen — en telkens
+                            voelde ik na zo'n proces opnieuw ruimte, rust en verlichting.</p>
+
+                        <p>Ik leerde mezelf helen door <em>via mijn lichaam te luisteren</em>, in plaats van alleen via
+                            mijn
+                            hoofd te begrijpen. En dat is precies wat ik nu aan anderen wil doorgeven:
+                            dat heling mogelijk is wanneer we weer thuiskomen in ons lichaam — daar waar onze ware
+                            kracht, wijsheid en rust al die tijd al aanwezig waren.</p>
+                    </div>
+                    <div style="position: sticky; top: 100px;">
+                        <img src="img/about_me.png" alt="Een foto van Sofie Casselman, de coach achter Bewust-er zijn."
+                            style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-soft);" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="page contact" style="padding-top: 6rem;">
+            <div class="container grid grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <h1>Contact</h1>
+                    <p class="lead">Ik hoor graag van je.</p>
+
+                    <div class="card" style="margin-top: 2rem;">
+                        <p>Heb je vragen of wil je een afspraak maken? Stuur gerust een berichtje.</p>
+
+                        <div style="margin-top: 1.5rem;">
+                            <p><strong>E-mail:</strong> <a
+                                    href="mailto:info@camaris.be?subject=bewust-er zijn vraag&body=Hallo Sofie, Ik heb een vraagje.">info@camaris.be</a>
+                            </p>
+                            <p><strong>Telefoon / WhatsApp:</strong> +32 468 10 67 99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-visual hide-on-mobile">
+                    <img src="img/1.png" alt="Sofie die uitkijkt over de zee."
+                        style="width: 100%; max-width: 350px; border-radius: var(--radius); box-shadow: var(--shadow-soft);">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>&copy; 2025 Bewust-er zijn</div>
+            <div>
+                <!-- Privacy Link triggers Modal -->
+                <a href="#" id="privacy-link" style="margin-right: 1rem;">Privacy</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal-backdrop">
+        <div class="modal-content">
+            <button id="close-modal" class="modal-close">&times;</button>
+            <div id="privacy-content">
+                <section class="intro">
+                    <h1>Privacybeleid</h1>
+                    <p>Deze pagina legt uit welke gegevens we verzamelen, waarom we ze gebruiken en welke rechten u
+                        heeft. Deze praktijk is bedoeld om transparant en overzichtelijk te zijn.</p>
+                </section>
+
+                <section>
+                    <h2>1. Welke gegevens verzamelen we?</h2>
+                    <ul>
+                        <li>Contactgegevens die u opstuurt via formulieren (naam, e‑mail, bericht).</li>
+                        <li>Technische gegevens zoals IP‑adres en browsergegevens via serverlogs en (indien toegestaan)
+                            analytics.</li>
+                        <li>Cookies en vergelijkbare technologieën — zie het cookie‑gedeelte hieronder.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>2. Hoe gebruiken we uw gegevens?</h2>
+                    <p>We gebruiken uw gegevens om te reageren op contactverzoeken, om de website te verbeteren en, als
+                        u daarvoor toestemming geeft, voor analyses en gerichte communicatie.</p>
+                </section>
+
+                <section>
+                    <h2>3. Cookies</h2>
+                    <p>De website gebruikt essentiële cookies voor basisfunctionaliteit. Voor analytische en
+                        marketingcookies vragen we uw toestemming. U kunt uw voorkeuren instellen via de cookie‑banner
+                        of de privacyvoorkeuren.</p>
+                </section>
+
+                <section>
+                    <h2>4. Derden en externe diensten</h2>
+                    <p>Sommige diensten (bijv. analytics of advertentienetwerken) kunnen gegevens verwerken. Wij laden
+                        zulke scripts alleen wanneer u toestemming geeft via de cookie‑instellingen.</p>
+                </section>
+
+                <section>
+                    <h2>5. Uw rechten</h2>
+                    <p>Neem contact op via de gegevens hieronder om uw rechten uit te oefenen.</p>
+                    <ul>
+                        <li>Toegang tot uw gegevens.</li>
+                        <li>Correctie of verwijdering van onjuiste gegevens.</li>
+                        <li>Beperking van of bezwaar tegen verwerking.</li>
+                        <li>Intrekken van toestemming wanneer die is gegeven.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>6. Contact</h2>
+                    <p>Voor vragen over privacy of het uitoefenen van uw rechten, stuur een e‑mail naar: <a
+                            href="mailto:privacy@camaris.example?subject=privacy vraag bewust-er zijn">privacy@camaris.be</a>.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>7. Wijzigingen in dit beleid</h2>
+                    <p>Wij kunnen dit privacybeleid bijwerken. De datum van inwerkingtreding staat onderaan deze pagina.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/snippets.js" defer></script>
+    <script>
+        // Modal Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('privacy-modal');
+            const openBtn = document.getElementById('privacy-link');
+            const closeBtn = document.getElementById('close-modal');
+
+            openBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
+
+            const closeModal = () => {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            closeBtn.addEventListener('click', closeModal);
+
+            // Close on click outside
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+
+            // Active Navigation Link Logic
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 150)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

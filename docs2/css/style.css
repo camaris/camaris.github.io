@@ -1,0 +1,155 @@
+/* Basic Styles */
+:root {
+    --bg-surface: #ffffff;
+    --radius: 8px;
+    --header-height: 60px;
+    --accent: #7b5ebb;
+}
+* { box-sizing: border-box; }
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    background: #000;
+    color: #fff;
+    z-index: 9999;
+}
+
+.btn {
+    display: inline-block;
+    padding: .6rem 1rem;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+.btn.ghost {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* Basic Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 60px; /* For fixed header */
+}
+
+.grid{display:grid; gap:1rem}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.card{
+	background:var(--bg-surface);
+	padding:1rem;
+	border-radius:var(--radius);
+	box-shadow:0 6px 18px rgba(61, 52, 42, 0.05);
+}
+
+.services-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:720px){
+	.hide-on-mobile { display: none; }
+}
+
+
+section {
+    padding: 4rem 0;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+    /* ensure anchor targets are visible below fixed header */
+    scroll-margin-top: calc(var(--header-height) + 10px);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-image: url('../img/sand.png');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+@media (max-width:720px){
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* Image utility classes to reduce layout shift and replace inline styles */
+/* Make images slightly smaller in wide layouts to improve composition */
+.about-img, .services-img { 
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.contact-img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+.logo-img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
