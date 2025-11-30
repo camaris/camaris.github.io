@@ -20,6 +20,8 @@ body {
 body {
 	font-family: var(--font-body);
 	margin: 0;
+	padding-top: 80px;
+	/* Added to prevent content overlap with fixed header */
 	background-color: var(--bg-body);
 	/* Overlay with 90% opacity to make it very subtle */
 	background-image: linear-gradient(rgba(250, 249, 246, 0.9), rgba(250, 249, 246, 0.9)), url('../img/bg-sand.png');
@@ -85,7 +87,10 @@ a:hover {
 	backdrop-filter: blur(12px);
 	-webkit-backdrop-filter: blur(12px);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-	position: sticky;
+	position: fixed;
+	/* Changed from sticky */
+	width: 100%;
+	/* Ensure full width */
 	top: 0;
 	z-index: 100;
 	padding: 1rem 0;
@@ -383,6 +388,10 @@ a:hover {
 }
 
 /* Responsive */
+.grid-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
 @media (max-width:900px) {
 	.grid-3 {
 		grid-template-columns: repeat(2, 1fr)
@@ -390,6 +399,16 @@ a:hover {
 
 	.grid-2 {
 		grid-template-columns: 1fr
+	}
+
+	.grid-4 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.grid-4 {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -458,4 +477,15 @@ a:hover {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+/* Privacy Modal Adjustments */
+#privacy-content h1 {
+	font-size: 1.5rem;
+	/* 50% of default 3rem */
+}
+
+#privacy-content h2 {
+	font-size: 1.125rem;
+	/* 50% of default 2.25rem */
 }
