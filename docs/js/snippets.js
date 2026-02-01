@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     Promise.all([
         fetch("header.html").then(response => response.text()),
         fetch("footer.html").then(response => response.text()),
@@ -33,18 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
         // Load and initialize cookie script
         const script = document.createElement('script');
         script.src = 'js/cookies.js';
-        script.onload = function() {
+        script.onload = function () {
             initCookieConsent();
         };
         document.body.appendChild(script);
     });
 
-    // Load privacy content if on privacy page
-    if (window.location.pathname.endsWith("privacy.html")) {
-        fetch("privacy_content.html")
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector("main.container").innerHTML = data;
-            });
-    }
+
 });

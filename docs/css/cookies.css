@@ -1,18 +1,21 @@
 /* Global Color Palette */
 :root {
 	/* Brand & Accent Colors */
-	--color-primary: #4d4033; /* Deep brown */
-	--color-accent: #e87a2e; /* Warm orange */
-
+	--color-primary: #8DA399; /* Sage Green - Calming, Nature */
+	--color-secondary: #D4C5B0; /* Warm Sand - Grounding */
+	--color-accent: #D4C5B0; /* Using Sand as accent for now, or maybe a soft terracotta if needed? Let's stick to Sand/Sage */
+	
 	/* Text Colors */
-	--text-primary: #3d342a; /* Dark brown for main text */
-	--text-on-primary: #f5f5dc; /* Beige for text on dark backgrounds */
-	--text-on-accent: #ffffff; /* White for text on accent color */
-	--text-muted: #a99a8c; /* Lighter brown for secondary text */
+	--text-primary: #374151; /* Dark Charcoal - Softer than black */
+	--text-secondary: #5F6A76; /* Muted Blue-Grey */
+	--text-on-primary: #FFFFFF;
+	--text-on-accent: #374151;
+	--text-muted: #8D9093;
 
 	/* Background Colors */
-	--bg-body: #fdfbf7; /* Soft off-white for main page background */
-	--bg-surface: #ffffff; /* White for cards, modals, etc. */
+	--bg-body: #FAF9F6; /* Off-White / Paper */
+	--bg-surface: #FFFFFF; /* Pure White */
+	--bg-subtle: #F2F0EB; /* Light Beige for sections */
 }
 
 /* Basic cookie banner and modal styles */

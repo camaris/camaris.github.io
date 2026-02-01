@@ -1,71 +1,104 @@
 <!doctype html>
 <html lang="nl">
+
 <head>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JLWTHL1JG5"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-JLWTHL1JG5');
+		gtag('config', 'G-JLWTHL1JG5');
 	</script>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<meta name="description" content="Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in je lichaam en vind rust, kracht en helderheid." />
+	<meta name="description"
+		content="Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in je lichaam en vind rust, kracht en helderheid." />
 	<title>Bewust-er zijn - Home</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Delius&family=Gloria+Hallelujah&family=Playwrite+AU+TAS:wght@100..400&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap"
+		rel="stylesheet">
 	<!-- added cookie styles -->
 	<link rel="stylesheet" href="css/cookies.css">
 </head>
+
 <body>
 	<header class="site-header">
+		<div class="container header-inner">
+			<a class="brand" href="index.html">Bewust-er zijn</a>
+
+			<input id="nav-toggle" type="checkbox" />
+			<label class="nav-toggle-label" for="nav-toggle">
+				<span></span>
+			</label>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="services.html">Aanbod</a></li>
+					<li><a href="about.html">Over mij</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index_SPA.html">(single page version)</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
-		<section class="intro container">
-			<div class="grid grid-3">
-				<div class="container hide-on-mobile">
-					<img src="img/logo1.png" alt="Logo van Bewust-er zijn coaching" style="width: 100%;">
-				</div>
-				<div class="container">
-					<h1>Rust. Kracht. Helderheid.</h1>
-					<p>Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in je lichaam en vind rust, kracht en helderheid.</p>
-					<p><a class="btn" href="contact.html">Neem contact op</a> <a class="btn ghost" href="services.html">Bekijk het aanbod</a></p>
+		<section class="hero">
+			<div class="container">
+				<h1>Rust. Kracht. Helderheid.</h1>
+				<p>Lichaamsgerichte coaching en energetisch werk voor diepe heling en persoonlijke groei. Kom thuis in
+					je lichaam.</p>
+				<div style="margin-top: 2rem;">
+					<a class="btn" href="contact.html">Neem contact op</a>
+					<a class="btn ghost" href="services.html" style="margin-left: 1rem;">Bekijk het aanbod</a>
 				</div>
 			</div>
 		</section>
 
 		<section class="intro container">
-			<h2>Hoe we willen helpen</h2>
-			<div class="grid grid-2">
+			<div style="margin-top: 2rem;"></div>
+			<div style="text-align: center; margin-bottom: 3rem;">
+				<h2>Hoe we willen helpen</h2>
+				<p class="lead" style="max-width: 700px; margin: 0 auto;">Een holistische aanpak om weer in verbinding
+					te komen met jezelf.</p>
+			</div>
+
+			<div class="grid grid-4">
 				<div class="card">
 					<h3>Meditatie & Yoga Initiaties</h3>
-					<p>Je leert te voelen, te aarden en te vertrouwen op wat je lijf je vertelt.</p>
-					<a href="services.html">meer</a>
+					<p>Je leert te voelen, te aarden en te vertrouwen op wat je lijf je vertelt. Eenvoudige oefeningen
+						voor dagelijkse rust.</p>
+					<a href="services.html">Lees meer &rarr;</a>
 				</div>
 				<div class="card">
-					<h3>Opstellingswerk en energetisch werk</h3>
-					<p>Lichaamsgericht werken helpt om blokkades te doorbreken en opnieuw in stroming te komen.</p>
-					<a href="services.html">meer</a>
+					<h3>Opstellingswerk</h3>
+					<p>Lichaamsgericht werken helpt om blokkades te doorbreken en opnieuw in stroming te komen.
+						Systemisch kijken naar patronen.</p>
+					<a href="services.html">Lees meer &rarr;</a>
 				</div>
 				<div class="card">
-					<h3>Onderbewustzijn en het innerlijk kind</h3>
-					<p>Vrijmaken van vastgezette emoties en het transformeren van beperkende overtuigingen.</p>
-					<a href="services.html">meer</a>
+					<h3>Innerlijk Kind Werk</h3>
+					<p>Vrijmaken van vastgezette emoties en het transformeren van beperkende overtuigingen uit het
+						verleden.</p>
+					<a href="services.html">Lees meer &rarr;</a>
 				</div>
 				<div class="card">
-					<h3>Ademwerk en tapping</h3>
-					<p>Helderheid, ruimte en zelfverbinding door het zenuwstelsel in rust te brengen.</p>
-					<a href="services.html">meer</a>
+					<h3>Ademwerk & Tapping</h3>
+					<p>Helderheid, ruimte en zelfverbinding door het zenuwstelsel in rust te brengen met krachtige
+						technieken.</p>
+					<a href="services.html">Lees meer &rarr;</a>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer class="site-footer"></footer>
-	<script src="js/snippets.js" defer></script></body>
+	<script src="js/snippets.js" defer></script>
+</body>
+
 </html>

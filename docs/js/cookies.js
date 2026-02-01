@@ -1,5 +1,5 @@
 function initCookieConsent() {
-	const KEY = 'site_cookie_prefs_v1';
+	const KEY = 'site_cookie_prefs_v2';
 
 	// Elements
 	const banner = document.getElementById('cookie-banner');
